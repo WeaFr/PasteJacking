@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PasteJacking</title>
+</head>
+<body>
+	<center>
+		<p> Je suis le meilleur
+		<span style="position: absolute; left: -2000px; top: -100px;">
+		, FAUUX !!  <br> 
+		</span>
+		!!
+		</p>
+	</center>
+
+	<script type="text/javascript">
+		document.addEventListener('copy', function(e){
+			e.clipboardData.setData('text/plain', 'Tu est nul');
+			e.preventDefault();
+		});
+	</script>
+
+</body>
+</html>
+
